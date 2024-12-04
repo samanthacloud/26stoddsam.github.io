@@ -1,4 +1,58 @@
-<!DOCTYPE html>
-<html>
-<head> 
+
+.organizer {
+    display: grid;
+    grid-template-columns: 90px 120px auto;
+
+}
+
+
+
+
+/*////////////////////////NAV BAR CSS///////////////////////// */
+
+/* Reset default margin and padding */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Styling the navbar */
+.navbar {
+    display: flex;
+    background-color: #45354f;
+    padding: 1rem;
+    justify-content: center;
+}
+
+/* Styling individual buttons */
+.nav-button {
+    color: #d796ff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #36124d;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+/* Hover effect */
+.nav-button:hover {
+    background-color: #7423a8;
+}
+
+.bottom-body{
+    background-color:#36124d;
     
+    height:700px;
+    padding-right:200px;
+    padding-bottom:200px;
+    margin:75px;
+}
+
+/*////////////////////////NAV BAR CSS END////////////////////// */
