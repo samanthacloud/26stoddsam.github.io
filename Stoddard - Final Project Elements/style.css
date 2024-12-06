@@ -1,12 +1,4 @@
 
-.organizer {
-    display: grid;
-    grid-template-columns: 90px 120px auto;
-
-}
-
-
-
 
 /*////////////////////////NAV BAR CSS///////////////////////// */
 
@@ -48,7 +40,6 @@ body {
 
 .bottom-body{
     background-color:#36124d;
-    
     height:700px;
     padding-right:200px;
     padding-bottom:200px;
@@ -56,3 +47,28 @@ body {
 }
 
 /*////////////////////////NAV BAR CSS END////////////////////// */
+
+
+
+/*////////////////////////INDEX.HTML CSS/////////////////////// */
+
+.index-organizer {
+    display: grid;
+    grid-template-columns: 90px 120px auto;
+}
+
+.left-taskbar  {
+    background-color: #c9f2ff
+    padding: 20px;
+}
+
+.left-separation {
+    background-color: black;
+
+}
+
+.right-main-page-body {
+    grid-column: 2 / span 2;
+    "https://cdn12.picryl.com/photo/2016/12/31/background-background-pattern-backgrounds-texture-backgrounds-textures-443038-1024.jpg"
+}
+
