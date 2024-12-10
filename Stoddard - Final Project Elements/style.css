@@ -17,29 +17,29 @@ body {
 /* Styling the navbar */
 .navbar {
     display: flex;
-    background-color: #45354f;
+    background-color: #000066;
     padding: 1rem;
     justify-content: center;
 }
 
-/* Styling individual buttons */
+/* Styling the buttons */
 .nav-button {
-    color: #d796ff;
+    color: #F0FFFF;
     text-decoration: none;
     padding: 10px 20px;
     margin: 0 10px;
-    background-color: #36124d;
+    background-color: #6699CC;
     border-radius: 5px;
     transition: background-color 0.3s;
 }
 
 /* Hover effect */
 .nav-button:hover {
-    background-color: #7423a8;
+    background-color: #1b4d94;
 }
 
 .bottom-body{
-    background-color:#36124d;
+    background-color:#000066;
     height:700px;
     padding-right:200px;
     padding-bottom:200px;
@@ -48,17 +48,26 @@ body {
 
 /*////////////////////////NAV BAR CSS END////////////////////// */
 
-
+/*////////////////////////FOOTER////////////////////////////////*/
+.footer {
+    background-color: #333333;
+    color: white;
+    padding: 20px;
+    max-height: 120px; /* This ensures the footer doesn't stretch beyond 120px */
+}
 
 /*////////////////////////INDEX.HTML CSS/////////////////////// */
 
-.index-organizer {
+#index-organizer {
     display: grid;
-    grid-template-columns: 90px 120px auto;
+    grid-template-columns: 120px 90px auto; /* 3 columns: two 90px and one that auto sizes */
+    grid-template-rows: auto 120px; /* Auto height for the main content and a fixed height for the footer */
+    grid-template-areas: 
+        "left-taskbar left-seperation right-main-body"
+        "footer footer footer"; /* Footer spans all columns */
 }
-
 .left-taskbar  {
-    background-color: #c9f2ff
+    background-color: #6699CC;
     padding: 20px;
 }
 
@@ -67,8 +76,12 @@ body {
 
 }
 
+
 .right-main-page-body {
     grid-column: 2 / span 2;
-    "https://cdn12.picryl.com/photo/2016/12/31/background-background-pattern-backgrounds-texture-backgrounds-textures-443038-1024.jpg"
+    background-image: url('https://cdn12.picryl.com/photo/2016/12/31/background-background-pattern-backgrounds-texture-backgrounds-textures-443038-1024.jpg');
+    background-size: cover; /* Ensures the image covers the entire element */
+    background-position: center; /* Center the image */
+    width: 100%; /* Makes sure it takes full width of the column */
+    height: 100%; /* Makes sure it takes full height available in the grid */
 }
-
