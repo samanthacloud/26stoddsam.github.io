@@ -1,3 +1,24 @@
+/*////////////////////////GLOBAL CSS/////////////////////// */
+p{
+    font-weight:bold;
+    font-family:Verdana;
+}
+
+.head-page{
+    background-color:FFFFFF;
+    text-align:center;
+    height:100px;
+}
+
+
+
+
+/*////////////////////////LOGO BAR CSS///////////////////////// */
+.logo-bar{
+    color:blue;
+}
+
+
 
 
 /*////////////////////////NAV BAR CSS///////////////////////// */
@@ -19,7 +40,7 @@ body {
     display: flex;
     background-color: #000066;
     padding: 1rem;
-    justify-content: center;
+    justify-content: right;
 }
 
 /* Styling the buttons */
@@ -69,6 +90,13 @@ body {
 .left-taskbar  {
     background-color: #6699CC;
     padding: 20px;
+    min-height:850px;
+}
+
+#left-logo{
+    color:#f0ffff;
+    grid-column: 1;
+    justify-content: left;
 }
 
 .left-separation {
@@ -78,10 +106,84 @@ body {
 
 
 .right-main-page-body {
-    grid-column: 2 / span 2;
+    grid-column: 3 / span 2;
     background-image: url('https://cdn12.picryl.com/photo/2016/12/31/background-background-pattern-backgrounds-texture-backgrounds-textures-443038-1024.jpg');
     background-size: cover; /* Ensures the image covers the entire element */
     background-position: center; /* Center the image */
     width: 100%; /* Makes sure it takes full width of the column */
     height: 100%; /* Makes sure it takes full height available in the grid */
+    
+    padding-top: 500px;
+    padding-right: 50%;
+    padding-left: 50%;
+    
 }
+
+
+
+.info-square{
+    background-color:#333366;
+    color:#99CCFF;
+    border-radius:5px;
+}
+
+
+/* FLEX GRID CSS!!!!!!!!!*/
+.picture-grid {
+    display: flex; 
+    flex-wrap: wrap;
+}
+
+.picture-grid .col {
+    flex: 1;   
+    display: flex;         
+    justify-content: center; 
+    padding: 10px;   
+
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color:blue;
+}
+
+.artwork{
+    display: flex;
+    display:block;
+    flex-direction:column;
+    margin-bottom:50px;
+}
+
+
+
+.picture-grid .col img {
+    display: flex;
+    display: block; 
+    margin-bottom: 5px;
+    width:350px;
+}
+
+.picture-grid .col h3 {
+    background-color:lightblue;
+    color:blue;
+    border-radius: 5px
+}    
+
+.picture-grid .col:last-child {
+    background: lightgreen;
+}
+
+@media screen and (max-width: 800px){
+   .picture-grid .col img {
+    display: flex;
+    display: block; 
+    margin-bottom: 5px;
+    width:300px;
+}
+
+}
+
+
